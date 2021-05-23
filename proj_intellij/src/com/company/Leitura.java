@@ -1,3 +1,4 @@
+package com.company;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -13,9 +14,12 @@ public class Leitura {
         int numLinhas = 0;
         int numPaginas = 1;
 
-        Path path1 = Paths.get("teste.txt");// java.txt
+        Path path_java = Paths.get("C:\\Users\\ramir\\Documents\\GitHub\\PUCRS\\2021-1\\ALEST\\AlestTrab1\\Arquivos Auxiliares\\Livros\\java.txt");// java.txt
+        Path path_alice = Paths.get("C:\\Users\\ramir\\Documents\\GitHub\\PUCRS\\2021-1\\ALEST\\AlestTrab1\\Arquivos Auxiliares\\Livros\\alice.txt");// alice.txt
+        Path path_cocoaandchocolate = Paths.get("C:\\Users\\ramir\\Documents\\GitHub\\PUCRS\\2021-1\\ALEST\\AlestTrab1\\Arquivos Auxiliares\\Livros\\cocoaandchocolate.txt");// cocoaandchocolate.txt
+        Path path_fiveweeksinaballoon = Paths.get("C:\\Users\\ramir\\Documents\\GitHub\\PUCRS\\2021-1\\ALEST\\AlestTrab1\\Arquivos Auxiliares\\Livros\\fiveweeksinaballoon.txt");// fiveweeksinaballoon.txt
 
-        try (BufferedReader reader = Files.newBufferedReader(path1, Charset.defaultCharset())) {
+        try (BufferedReader reader = Files.newBufferedReader(path_java, Charset.defaultCharset())) {
             String line = null;
             while ((line = reader.readLine()) != null) {
                 linhas[numLinhas] = line;
